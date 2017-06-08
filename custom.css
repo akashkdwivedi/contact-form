@@ -1,0 +1,19 @@
+.logo {
+	width: 100%;
+}
+
+.logo img {
+	display: block;
+	width: 619px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#contact_form legend {
+	text-align: center;
+}
+
+.info-text {
+	margin-top: 4%;
+	margin-bottom: 4%;
+}

@@ -1,0 +1,176 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js" ></script>
+  <link rel="stylesheet" type="text/css" href="custom.css" />
+
+  <style>
+    #success_message{ display: none;}
+    #error_message {display: none;}
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+<h1 class="logo">
+  <img src="img/logo.png"/>
+</h1>
+
+<div class="info-text">
+<p>
+  Helping workplaces build safe and compliant workplaces for all their employees under the prevention of Sexual Harassment at Workplace Act 2013.
+  Leave your details below to allow us understand your needs better.
+</p>
+<p>
+  What we provide:
+</p>
+<ul>
+<li>Domain expertise on adopting compliance guidelines specific to your industry, organisation and team size.</li>
+<li>End to end product and service offered for ensuring compliance on the act.</li>
+<li>Online and offline engagements to provide cost effective solutions for large and fragmented operations.</li>
+<li>For urgent and immediate concerns, dial our contact number +91 95826 30056.</li>
+</ul>
+
+</div>
+
+<form class="well form-horizontal" action="#" id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Contact Us!</legend>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="name" placeholder="Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+       
+<div class="form-group">
+  <label class="col-md-4 control-label">Phone</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="+91-9582630056" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+      
+<div class="form-group">
+  <label class="col-md-4 control-label">Company</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="company_name" placeholder="Company Name" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Select Basic -->
+   
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Company Size</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="company_size" class="form-control selectpicker" >
+      <option value="0-50" >0-50</option>
+      <option value="50-100" >50-100</option>
+      <option value=">100" > &gt; 100 </option>
+    </select>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Service</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="service" class="form-control selectpicker" >
+      <option value="External Member" >External Member</option>
+      <option value="POSH Online Toolkit" >POSH Online Toolkit</option>
+      <option value="ICC Training" >ICC Training</option>
+      <option value="Employee Sensitization Training" >Employee Sensitization Training</option>
+      <option value="Management On boarding" >Management On boarding</option>
+      <option value="HR On boarding management" >HR On boarding management</option>
+      <option value="Train the Trainers session" >Train the Trainers session</option>
+      <option value="Implementation Documentation Package" >Implementation Documentation Package</option>
+      <option value="Legal representation in matters" >Legal representation in matters</option>
+      <option value="Legal advise- sexual harassment matters" >Legal advise- sexual harassment matters</option>
+      <option value="Locating District Officers" >Locating District Officers</option>
+      <option value="Locating Local Complaints Committee" >Locating Local Complaints Committee</option>
+      <option value="Sexual Harassment Policies drafting" >Sexual Harassment Policies drafting</option>
+      <option value="Conciliation service- sexual harassment matters" >Conciliation service- sexual harassment matters</option>
+    </select>
+  </div>
+</div>
+</div>
+
+
+
+<!-- Text area -->
+  
+<div class="form-group">
+  <label class="col-md-4 control-label">Message</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea class="form-control" name="message" placeholder="Message (if any)"></textarea>
+  </div>
+  </div>
+</div>
+
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+<div class="alert alert-danger" role="alert" id="error_message">Error <i class="glyphicon glyphicon-thumbs-down"></i> Oops! An error occurred while registering your query. Please try again!.</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button id="submitForm" type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+</div><!-- /.container -->
+
+
+
+<script src="custom.js"></script>
+
+</body>
+</html>
