@@ -11,9 +11,27 @@
 
 #contact_form legend {
 	text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 200%;
 }
 
 .info-text {
 	margin-top: 4%;
 	margin-bottom: 4%;
+	font-size: 16px;
+}
+
+.well {
+    background-color: #00aff0;
+    background-image: none;
+    color: white;
+}
+
+#submitForm {
+    background-image: none;
+    background-color: #8BC34A;
+    border: 0;
+    height: 40px;
+    width: 100%;
 }

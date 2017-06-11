@@ -2,13 +2,9 @@
 
 error_reporting(E_ALL); ini_set('display_errors', 1); 
 
+require_once('mailer.php');
 
-$to = "contact@ungender.in";
-$subject = "New query on ungender.in";
-
-
-// require 'libraries/PHPMailer-5.2.23/PHPMailerAutoload.php';
-// $mail = new PHPMailer;
+$to = "contact@nativebyte.in";
 
 
 function clean_string($str) {
@@ -24,22 +20,22 @@ $companySize = clean_string($_POST['company_size']);
 $service = clean_string($_POST['service']);
 
 
-$headers = "From: $email \r\n";
-$headers .= "Reply-To: $email \r\n";
-// $headers .= "Cc: someone@domain.com \r\n";
-// $headers .= "Bcc: someoneelse@domain.com \r\n";
+$subject = "New query from $name on nativebyte.in";
 
-$body = "Hi \r\n";
-$body .= "You have received a new query from ungender.in \r\n";
-$body .= "Name: $name \r\n";
-$body .= "Phone: $phone \r\n";
-$body .= "Email: $email \r\n";
-$body .= "Company Name: $companyName \r\n";
-$body .= "Company Size: $companySize \r\n";
-$body .= "Service: $service \r\n";
-$body .= "Message: $msg \r\n";
+$body = "Hi! <br/>\r\n";
+$body .= "You have received a new query from nativebyte.in <br/> <br/> \r\n";
+$body .= "<b>Name:</b> $name  <br/> \r\n";
+$body .= "<b>Phone:</b> $phone  <br/> \r\n";
+$body .= "<b>Email:</b> $email <br/> \r\n";
+$body .= "<b>Company Name:</b> $companyName <br/> \r\n";
+$body .= "<b>Company Size:</b> $companySize <br/> \r\n";
+$body .= "<b>Service:</b> $service <br/> \r\n";
+$body .= "<b>Message:</b> $msg <br/> \r\n";
 
-die('{"mailed": false}');
-mail($to,$subject,$body,$headers) or die('{"mailed": false}');
-echo '{"mailed": true}';
+if(sendMail($subject, $body)) {
+    echo '{"mailed": true}';
+}
+else {
+    echo '{"mailed": false}';
+}
 
